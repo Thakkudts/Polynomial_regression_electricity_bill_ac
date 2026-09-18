@@ -1,10 +1,9 @@
-```python
 import gradio as gr
 import joblib
 import pandas as pd
 import os
 
-model = joblib.load("linear_regression_ac_electric_bill.pkl")
+model = joblib.load("polynomial_regression_electricity_ac.pkl")
 
 
 def predict_bill(ac_units):
