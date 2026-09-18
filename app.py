@@ -12,7 +12,7 @@ ac_units = st.number_input(
     "Enter AC Electricity Consumption (Units):",
     min_value=1.0,
     value=100.0,
-    max_value=149.0
+    max_value=149.0,
     step=1.0
 )
 
