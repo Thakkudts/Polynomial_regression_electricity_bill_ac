@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 from sklearn.preprocessing import PolynomialFeatures
+poly = PolynomialFeatures(degree=2)
 
 model = joblib.load("polynomial_regression_electricity_ac.pkl")
 
