@@ -5,7 +5,7 @@ poly = PolynomialFeatures(degree=2)
 
 model = joblib.load("polynomial_regression_electricity_ac.pkl")
 
-st.title("⚡ AC Units vs Electric Bill")
+st.title("AC Units vs Electric Bill")
 st.write("Predict Electric Bill using Polynomial Regression")
 
 ac_units = st.number_input(
