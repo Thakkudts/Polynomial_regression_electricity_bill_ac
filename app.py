@@ -14,8 +14,8 @@ ac_units = st.number_input(
 )
 
 if st.button("Predict Electric Bill"):
-
-    prediction = model.predict([[ac_units]])
-
+    input_data=[[ac_units]]
+    input_poly=poly.fit_transform(input_data)
+    prediction = model.predict(input_poly)
     st.success(f"Expected Electric Bill: ₹{prediction[0]:.2f}")
 
